@@ -1,0 +1,51 @@
+version: ‘3’
+networks:
+  zigbee-net:
+    driver: bridge
+services:
+  #Zigbee2MQTT
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: 'koenkk/zigbee2mqtt'
+    depends_on:
+    - mosquitto
+    networks:
+      - zigbee-net
+    ports:
+    # Frontend port
+      - '8080:8080'
+    volumes:
+      - /home/adrian/docker/zigbee/zigbee2mqtt/data:/app/data
+      - /run/udev:/run/udev:ro
+    devices:
+      - '/dev/ttyUSB0:/dev/ttyUSB0'
+    restart: always
+    privileged: true
+#Mosquitto
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    networks:
+      - zigbee-net
+    ports:
+      - '1883:1883'
+    # This port is for Webhooks
+      - '9001:9001'
+    volumes:
+      - /home/adrian/docker/zigbee/mosquitto/config:/mosquitto/config
+      - /home/adrian/docker/zigbee/mosquitto/data:/mosquitto/data
+      - /home/adrian/docker/zigbee/mosquitto/log:/mosquitto/log
+    restart: always
+#HomeAssistant
+  homeassistant:
+    container_name: homeassistant
+    image: 'homeassistant/home-assistant:latest'
+    networks:
+      - zigbee-net
+    volumes:
+      - /home/adrian/docker/zigbee/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - '8123:8123'

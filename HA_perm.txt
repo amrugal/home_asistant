@@ -1,0 +1,63 @@
+.
+├── [-rw-r--r-- adrian   adrian  ]  docker-compose.yml
+├── [-rw-r--r-- adrian   adrian  ]  HA_perm.txt
+├── [drwxr-xr-x adrian   adrian  ]  homeassistant
+│   ├── [-rw-r--r-- root     root    ]  automations.yaml
+│   ├── [drwxr-xr-x root     root    ]  backups
+│   │   └── [-rw-r--r-- adrian   adrian  ]  f32f2a1f.tar
+│   ├── [drwxr-xr-x root     root    ]  blueprints
+│   │   ├── [drwxr-xr-x adrian   adrian  ]  automation
+│   │   │   └── [drwxr-xr-x adrian   adrian  ]  homeassistant
+│   │   │       ├── [-rw-r--r-- adrian   adrian  ]  motion_light.yaml
+│   │   │       └── [-rw-r--r-- adrian   adrian  ]  notify_leaving_zone.yaml
+│   │   └── [drwxr-xr-x adrian   adrian  ]  script
+│   │       └── [drwxr-xr-x adrian   adrian  ]  homeassistant
+│   │           └── [-rw-r--r-- adrian   adrian  ]  confirmable_notification.yaml
+│   ├── [-rw-r--r-- root     root    ]  configuration.yaml
+│   ├── [drwxr-xr-x root     root    ]  deps
+│   ├── [-rw-r--r-- root     root    ]  home-assistant.log
+│   ├── [-rw-r--r-- root     root    ]  home-assistant.log.1
+│   ├── [-rw-r--r-- root     root    ]  home-assistant.log.fault
+│   ├── [-rw-r--r-- root     root    ]  home-assistant_v2.db
+│   ├── [-rw-r--r-- root     root    ]  home-assistant_v2.db-shm
+│   ├── [-rw-r--r-- root     root    ]  home-assistant_v2.db-wal
+│   ├── [-rw-r--r-- root     root    ]  scenes.yaml
+│   ├── [-rw-r--r-- root     root    ]  scripts.yaml
+│   ├── [-rw-r--r-- root     root    ]  secrets.yaml
+│   └── [drwxr-xr-x root     root    ]  tts
+├── [drwxr-xr-x adrian   adrian  ]  mosquitto
+│   ├── [drwxr-xr-x 1883     1883    ]  config
+│   │   └── [-rw-r--r-- 1883     1883    ]  mosquitto.conf
+│   ├── [drwxr-xr-x 1883     1883    ]  data
+│   │   └── [-rw------- 1883     1883    ]  mosquitto.db
+│   └── [drwxr-xr-x 1883     1883    ]  log
+│       └── [-rw------- 1883     1883    ]  mosquitto.log
+└── [drwxr-xr-x adrian   adrian  ]  zigbee2mqtt
+    └── [drwxr-xr-x adrian   adrian  ]  data
+        ├── [-rw-r--r-- root     root    ]  configuration.yaml
+        ├── [-rw-r--r-- root     root    ]  coordinator_backup.json
+        ├── [-rw-r--r-- root     root    ]  database.db
+        ├── [drwxr-xr-x root     root    ]  log
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-20-48
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-21-54
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-23-00
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-24-06
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-25-12
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-26-18
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-27-24
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-28-30
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   ├── [drwxr-xr-x root     root    ]  2023-03-25.17-29-36
+        │   │   └── [-rw-r--r-- root     root    ]  log.txt
+        │   └── [drwxr-xr-x root     root    ]  2023-03-25.17-56-23
+        │       └── [-rw-r--r-- root     root    ]  log.txt
+        └── [-rw-r--r-- root     root    ]  state.json
+
+26 directories, 34 files
